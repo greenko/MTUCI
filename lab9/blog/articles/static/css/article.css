@@ -1,0 +1,117 @@
+body {
+    background: #1abc9c; 
+    font-family: Tahoma, Arial, sans-serif; 
+    color: #ffffff;
+}
+
+img.logo {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title a {
+    color: #ffffff;
+    width: 80%;
+    float: left;}
+
+.all-posts a, .login-logout a {
+    color: #ff1111
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+}
+
+.article-created-date {
+    text-align: right;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color:blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.div-fold-button {
+    text-align: right;
+}
+
+.one-post.folded .article-info, .one-post.folded .article-text { 
+    display: none;
+}
+
+.one-post {
+    position: relative;
+}
+
+.one-post-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0;
+    z-index: -1; /* это свойство «отодвигает» элемент на задний план */
+}
+
+.header {
+    background:#d1eee7;
+    padding:20px;
+    position:relative;
+}
+
+ .header-text-area {
+    float: left;
+    width: 500px;
+    text-align: center;
+    color: #004d40;
+ }
+
+.icons-for-parallax {
+    margin-top: 0px;
+    margin-bottom: 200px;
+    height: 100px;
+    position: relative;
+    
+}
+.icons-for-parallax img {
+    /* здесь находятся общие для всех картинок стили */
+    position: absolute;
+    top: 0;
+}
+
+.icon-for-parallax-logo {
+    margin-top: 0px;
+}
+
+.icon-for-parallax-first {
+    width: 100px;
+    margin-top: 200px;
+    z-index: 3; /* эта картинка на переднем плане, у неё больший z-index 
+*/
+}
+.icon-for-parallax-second {
+    width: 75px; /* уменьшить ширину для картинки, чтобы визуально */
+                  /* находилась дальше для пользователя */
+    margin-top: 170px; /* эта картинка слегка смещена вправо и вниз */
+    margin-left: 90px; /* за счет левой и верхней границ */
+    z-index: 2;
+}
+.icon-for-parallax-third{
+    margin-top: 150px;
+    width: 50px;
+    margin-left: 160px;
+    z-index: 1; /* эта картинка на заднем плане, у неё меньший z-index */
+}
